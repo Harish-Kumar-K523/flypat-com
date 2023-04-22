@@ -16,6 +16,112 @@ body{
     background-color: aliceblue;
     padding: 20px;
     border-radius: 10px;
-
 }
-
+#nav-header{
+    padding: 10px;
+    display: flex;
+    gap: 47rem;
+    justify-content: center;
+}
+#nav-header-ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+#nav-header-ul > li{
+    font-size: 16px;
+    font-weight: 500;
+}
+.fa{
+    margin-left: 8px;
+}
+.nav-items{
+    display: none;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    background: hsla(0,0%,89%,.65);
+    border-radius: 10px;
+    color: #000;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 20px;
+    position: absolute;
+    right: 150px;
+    top: 75px;
+    width: 900px;
+}
+.nav-items .nav-item {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: normal;
+    align-items: normal;
+    flex-direction: column;
+    max-width: 200px;
+}
+.nav-items .nav-item .nav-item-title {
+    color: #369fd8;
+    font-weight: 600;
+    line-height: 15px;
+    margin-bottom: 10px;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.nav-items .nav-item .nav-item-content {
+    font-size: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin: 0;
+    padding: 0;
+}
+.links:hover .nav-items { 
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    align-content: normal; 
+    justify-content: space-evenly;
+    align-items: normal;
+}
+.links:hover .nav-ites { 
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    align-content: normal; 
+    justify-content: space-evenly;
+    align-items: normal;
+}
+.links:hover{
+    color: #369fd8;
+    cursor: pointer;
+}
+.launch{
+    align-items: center;
+    color: #369fd8;
+    font-size: 18px;
+    font-size: var(--font-lg);
+    justify-content: center;
+    padding: 10px;
+    width: auto;
+}
+.nav-ites{
+    display: none;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    background: hsla(0,0%,89%,.65);
+    border-radius: 10px;
+    color: #000;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 20px;
+    position: absolute;
+    right: 290px;
+    top: 75px;
+    width: 300px;
+}
