@@ -3,10 +3,34 @@ import ReactDOM from "react-dom"
 
 export default function(){
     return(
-        <div>
+    <div>
+        <div class="menu toggle">
+                <div class="titles">Solutions</div>
+                    <div class="nav-item" data-id="hospitalOwners">
+                        <i class="fas fa-hospital"></i>Hospital Owners
+                    </div>
+                    <div class="nav-item" data-id="labOwners"><i class="fas fa-flask"></i> Lab Owners
+                    </div>
+                    <div class="nav-item" data-id="pharmacyOwners">
+                        <i class="fas fa-solid fa-prescription-bottle-medical"></i>
+                    Pharmacy Owners</div>
+                    <div class="titles">Products</div>
+                    <div class="nav-item" data-id="launchingSoon">
+                        <i class="fas fa-solid fa-rocket l"></i> Launching Soon
+                    </div>
+                    <div class="nav-item" onclick="location.href ='/careers';">
+                        <i class="fas fa-solid fa-briefcase"></i>
+                    Careers
+                    </div>
+        </div>
             <nav id="nav-header">
                 <div className="logo">
                     Flypat (img)
+                </div>
+                <div class="hamberger toggle">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
                 </div>
                 <ul id="nav-header-ul">
                     <li>
@@ -64,6 +88,6 @@ export default function(){
                     </li>
                 </ul>
             </nav>
-        </div>
+        </div>       
     )
 }
