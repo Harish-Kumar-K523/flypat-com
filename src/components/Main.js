@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Content from "./Content";
 
 export default function(){
     return(
@@ -15,6 +16,7 @@ export default function(){
                 Empowering Promoters,<br></br>Providers & Supply Chain.
             </div>
                 <button id="main1-btn">Join</button>
+            <Content/>
         </div>
     )
 }

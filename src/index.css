@@ -13,7 +13,7 @@ body{
     /* background-color: aliceblue; */
 }
 #container{
-    background-color: aliceblue;
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
 }
@@ -178,6 +178,134 @@ body{
     display: none;
 }
 
+.owner-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    justify-content: center;
+    margin-top: 100px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+
+.owner-container h3{
+    margin: 0;
+}
+
+.hospital-text{
+    background: linear-gradient(to right, #6bc180, #369fd8);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.owner{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px 0;
+    width: 100%;
+}
+.bluebox{
+    background-image: url(/src/images/bluebox.svg);
+}
+.greenbox{
+    background-image: url(/src/images/greenbox.svg);
+}
+.trape{
+    align-items: center;
+    display: flex;
+    height: 256px;
+    justify-content: center;
+    width: 435px;
+}
+.owner-content{
+    color: white;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    padding: 80px 80px 100px;
+    text-align: left;
+}
+.box{
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 7px 11px 15px -3px #00000040;
+    height: 100%;
+    padding: 40px 30px;
+    text-transform: none;
+    width: 500px;
+}
+.box p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    padding: 20px 30px;
+    text-align: left;
+}
+.blue{
+    background-color: #2ac0d1;
+}
+.green{
+    background-color: #6bc180;
+}
+.btn{
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    height: 50px;
+    text-align: center;
+    width: 130px;
+}
+
+
+@media (max-width: 480px){    
+    .owner-container{
+        margin-top: 10px;
+    }
+    .owner-container{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 550px){
+
+    h3{
+        font-size: max(30px,min(2vw,40px));
+    }
+
+    .box{
+        margin-top: -70px;
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width:600px){
+    .owner-container{
+        margin-top: 50px;
+    }    
+    .owner{
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    .trape{
+        scale: .8;
+    }
+    .box{
+        margin-top: -70px;
+        scale: .8;
+    }
+}
+
 @media (max-width:768px){
     #root{
         padding: 0px;
@@ -263,3 +391,12 @@ body{
         width: 30px;
     } */
 }
+
+@media (max-width: 1199px){
+    .owner{
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
