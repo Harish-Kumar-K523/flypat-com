@@ -177,6 +177,13 @@ body{
 .toggle{
     display: none;
 }
+.heroSVG{
+    transition: all .5 ease-in-out;
+}
+.heroSVG:hover{
+    transform: scale(1.1);
+}
+
 
 .owner-container{
     align-items: center;
