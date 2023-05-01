@@ -138,6 +138,7 @@ body{
     font-size: 14px;
     letter-spacing: .495em;
     line-height: 18px;
+    font-weight: 500;
 }
 #sub-main1-title{
     font-size: 60px;
@@ -149,14 +150,29 @@ body{
     -webkit-text-fill-color: transparent;
     background: linear-gradient(90deg,#6bc180 -4.35%,#4bc1ab 43.23%,#2ac0d1 71.08%,#369fd8 105.31%),linear-gradient(180deg,#000,rgba(0,0,0,.427) 57.29%,transparent);
     -webkit-background-clip: text;
-    background-clip: text;
-    font-size: 60px;
-    line-height: 65px;
-    transition: all .5s ease-in-out;
+    animation: typing 3s steps(10),blink-caret 1s infinite;
+    transition:all .5s ease-in-out;
+}
+
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes blink-caret {
+    0%, 100%{
+        border-color: transparent;
+    }
+    50%{
+        border-color: #add8e6;
+    }
 }
 #sub-main1-context{
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 26px;
     margin: 0;
 }
